@@ -60,7 +60,7 @@ const Footer = () => {
                     <div>
                         <div className="mb-6">
                             <img
-                                src="/images/magnet Salon & Aesthetics logo white text.png"
+                                src="/images/magnet_logo_recolor.png"
                                 alt="Magnet Salon & Aesthetics"
                                 className="h-32 w-auto"
                             />

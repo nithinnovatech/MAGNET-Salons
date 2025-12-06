@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&amp;family=Inter:wght@400&amp;display=swap');
+    </style>
+  </defs>
+  <text x="10" y="60" font-family="Montserrat, sans-serif" font-weight="800" font-size="48" fill="#FF6B35">MAGNET</text>
+  <text x="10" y="85" font-family="Inter, sans-serif" font-weight="400" font-size="14" letter-spacing="2" fill="#FFFFFF">SALON &amp; AESTHETICS</text>
+</svg>
