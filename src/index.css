@@ -13,11 +13,11 @@
   --magnet-gray: #2D2D2D;
   --magnet-light: #F5F5F5;
   --magnet-white: #FFFFFF;
-  
+
   /* Gradients */
   --gradient-orange: linear-gradient(135deg, #FF6B35 0%, #FF8C61 100%);
   --gradient-dark: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
-  
+
   /* Typography */
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
@@ -50,7 +50,12 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -70,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @layer components {
+
   /* Premium Buttons */
   .btn-primary {
     @apply inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-white rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl;
@@ -77,11 +83,11 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     cursor: pointer;
   }
-  
+
   .btn-primary:hover {
     background: linear-gradient(135deg, #E65A2E 0%, #FF6B35 100%);
   }
-  
+
   .btn-secondary {
     @apply inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg;
     background: transparent;
@@ -89,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--magnet-orange);
     cursor: pointer;
   }
-  
+
   .btn-secondary:hover {
     background: var(--magnet-orange);
     color: white;
@@ -107,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
     @apply block w-full px-4 py-3 text-base border-2 border-gray-300 rounded-lg transition-all duration-200;
     font-family: 'Inter', sans-serif;
   }
-  
+
   .input-primary:focus {
     @apply outline-none border-orange-500 ring-2 ring-orange-200;
   }
@@ -117,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
     @apply bg-white rounded-2xl overflow-hidden transition-all duration-300 ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   }
-  
+
   .card:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);
@@ -128,12 +134,12 @@ h1, h2, h3, h4, h5, h6 {
     @apply relative overflow-hidden rounded-2xl transition-all duration-500 ease-in-out cursor-pointer;
     background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(45, 45, 45, 0.9) 100%);
   }
-  
+
   .service-card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 25px 50px rgba(255, 107, 53, 0.3);
   }
-  
+
   .service-card::before {
     content: '';
     position: absolute;
@@ -146,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: opacity 0.3s ease-in-out;
     z-index: 1;
   }
-  
+
   .service-card:hover::before {
     opacity: 0.15;
   }
@@ -155,12 +161,12 @@ h1, h2, h3, h4, h5, h6 {
   .section-padding {
     @apply py-20 px-4 md:px-8 lg:px-16;
   }
-  
+
   .section-title {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4;
     font-family: 'Montserrat', sans-serif;
   }
-  
+
   .section-subtitle {
     @apply text-lg md:text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto;
   }
@@ -169,11 +175,11 @@ h1, h2, h3, h4, h5, h6 {
   .fade-in {
     animation: fadeIn 0.6s ease-in;
   }
-  
+
   .slide-up {
     animation: slideUp 0.8s ease-out;
   }
-  
+
   .scale-in {
     animation: scaleIn 0.5s ease-out;
   }
@@ -186,11 +192,11 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  
+
   .bg-gradient-orange {
     background: var(--gradient-orange);
   }
-  
+
   .bg-gradient-dark {
     background: var(--gradient-dark);
   }
@@ -201,9 +207,15 @@ h1, h2, h3, h4, h5, h6 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
+}
+
+/* Color Filters */
+.filter-orange {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(34%) saturate(3475%) hue-rotate(336deg) brightness(101%) contrast(106%);
 }
 
 @keyframes slideUp {
@@ -211,6 +223,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -222,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);

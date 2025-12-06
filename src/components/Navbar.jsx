@@ -39,7 +39,7 @@ const Navbar = () => {
                         <img
                             src="/images/magnet Salon & Aesthetics logo white text.png"
                             alt="Magnet Salon & Aesthetics"
-                            className={`h-20 w-auto transition-all duration-300 ${isScrolled ? 'brightness-0 invert' : ''}`}
+                            className={`h-20 w-auto transition-all duration-300 filter-orange`}
                         />
                     </Link>
 

@@ -59,7 +59,7 @@ const Footer = () => {
                             <img
                                 src="/images/magnet Salon & Aesthetics logo white text.png"
                                 alt="Magnet Salon & Aesthetics"
-                                className="h-32 w-auto"
+                                className="h-32 w-auto filter-orange"
                             />
                         </div>
                         <p className="text-gray-300 mb-6 leading-relaxed">
