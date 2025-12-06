@@ -196,59 +196,7 @@ const Services = () => {
                 </div>
             </section>
 
-            {/* Process Section */}
-            <section className="section-padding bg-white">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className="section-title">
-                            How It <span className="magnet-brand">Works</span>
-                        </h2>
-                        <p className="section-subtitle">
-                            Your journey to beauty in four simple steps
-                        </p>
-                    </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        {[
-                            {
-                                step: '01',
-                                title: 'Book Appointment',
-                                description: 'Choose your service and preferred time slot',
-                                icon: '📅',
-                            },
-                            {
-                                step: '02',
-                                title: 'Consultation',
-                                description: 'Discuss your needs with our experts',
-                                icon: '💬',
-                            },
-                            {
-                                step: '03',
-                                title: 'Treatment',
-                                description: 'Relax and enjoy premium services',
-                                icon: '✨',
-                            },
-                            {
-                                step: '04',
-                                title: 'Follow-up',
-                                description: 'Get personalized care recommendations',
-                                icon: '💖',
-                            },
-                        ].map((item, index) => (
-                            <div key={index} className="text-center">
-                                <div className="text-6xl mb-4">{item.icon}</div>
-                                <div className="text-4xl font-black text-orange-500 mb-3">
-                                    {item.step}
-                                </div>
-                                <h4 className="text-xl font-bold text-gray-900 mb-2">
-                                    {item.title}
-                                </h4>
-                                <p className="text-gray-600">{item.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* CTA Section */}
             <section className="section-padding bg-gradient-orange text-white">
