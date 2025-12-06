@@ -55,9 +55,13 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* About Section */}
                     <div>
-                        <h3 className="text-3xl font-black mb-6">
-                            <span className="magnet-brand">MAGNET</span> Salons
-                        </h3>
+                        <div className="mb-6">
+                            <img
+                                src="/images/magnet Salon & Aesthetics logo white text.png"
+                                alt="Magnet Salon & Aesthetics"
+                                className="h-32 w-auto"
+                            />
+                        </div>
                         <p className="text-gray-300 mb-6 leading-relaxed">
                             Your premium beauty destination offering world-class services in a
                             luxurious setting. Experience the transformation.
@@ -195,9 +199,7 @@ const Footer = () => {
                             <span className="magnet-brand font-bold">MAGNET</span> Salons. All
                             rights reserved.
                         </p>
-                        <p className="text-gray-400 text-sm">
-                            Crafted with ❤️ for beauty excellence
-                        </p>
+
                     </div>
                 </div>
             </div>
