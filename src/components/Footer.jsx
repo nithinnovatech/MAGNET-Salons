@@ -17,17 +17,20 @@ const Footer = () => {
         {
             name: 'Magunta Layout, Nellore',
             address:
-                '3rd Floor, Lakshmi Priya Imperial Towers, Above SBI Bank, Magunta Layout, Nellore - 524001',
+                '3rd Floor, Lakshmi Priya Imperial Towers, above SBI Bank, Nellore, 524003, AP, IN',
+            mapLink: 'https://www.google.com/maps/search/Magnet%20Salon/@14.43504811,79.97851457,17z',
         },
         {
             name: 'Childrens Park, Nellore',
             address:
-                'First Floor, Aadhya Enclave, Childrens Park Main Road, Above Canara Bank, Nellore - 524003',
+                '16-15-986-1, Aadhya Enclave, Childrens Park Road / Main Road, 1, Nellore, 524002, AP, IN',
+            mapLink: 'https://www.google.com/maps/search/Magnet%20Salon/@14.44010656,79.99281092,17z',
         },
         {
             name: 'Tirupati',
             address:
                 'First Floor, Opp. Yamaha Showroom, New Balaji Colony, AIR Bypass Road, Tirupati',
+            mapLink: 'https://www.google.com/maps/search/?api=1&query=Magnet+Salon+Tirupati',
         },
     ];
 
@@ -179,9 +182,14 @@ const Footer = () => {
                                     <FaMapMarkerAlt className="h-5 w-5 text-orange-500 mt-1 flex-shrink-0" />
                                     <div>
                                         <h5 className="font-bold text-lg mb-2">{branch.name}</h5>
-                                        <p className="text-gray-300 text-sm leading-relaxed">
+                                        <a
+                                            href={branch.mapLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-gray-300 text-sm leading-relaxed hover:text-orange-500 transition-colors"
+                                        >
                                             {branch.address}
-                                        </p>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
