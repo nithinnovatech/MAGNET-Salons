@@ -28,27 +28,19 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white/95 backdrop-blur-md shadow-lg'
-                    : 'bg-transparent'
+                ? 'bg-white/95 backdrop-blur-md shadow-lg'
+                : 'bg-transparent'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
-                    <Link to="/" className="flex items-center space-x-1">
-                        <span
-                            className={`text-3xl md:text-4xl font-black magnet-brand transition-all duration-300`}
-                            style={{ fontFamily: 'Montserrat, sans-serif' }}
-                        >
-                            MAGNET
-                        </span>
-                        <span
-                            className={`text-3xl md:text-4xl font-black transition-all duration-300 ${isScrolled ? 'text-gray-900' : 'text-white'
-                                }`}
-                            style={{ fontFamily: 'Montserrat, sans-serif' }}
-                        >
-                            Salons
-                        </span>
+                    <Link to="/" className="flex items-center">
+                        <img
+                            src="/images/magnet Salon & Aesthetics logo white text.png"
+                            alt="Magnet Salon & Aesthetics"
+                            className={`h-20 w-auto transition-all duration-300 ${isScrolled ? 'brightness-0 invert' : ''}`}
+                        />
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -58,10 +50,10 @@ const Navbar = () => {
                                 key={link.path}
                                 to={link.path}
                                 className={`text-base font-semibold transition-colors duration-200 relative group ${isActive(link.path)
-                                        ? 'text-orange-500'
-                                        : isScrolled
-                                            ? 'text-gray-700 hover:text-orange-500'
-                                            : 'text-white hover:text-orange-300'
+                                    ? 'text-orange-500'
+                                    : isScrolled
+                                        ? 'text-gray-700 hover:text-orange-500'
+                                        : 'text-white hover:text-orange-300'
                                     }`}
                             >
                                 {link.name}
@@ -84,8 +76,8 @@ const Navbar = () => {
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         className={`lg:hidden p-2 rounded-lg transition-colors ${isScrolled
-                                ? 'text-gray-700 hover:bg-gray-100'
-                                : 'text-white hover:bg-white/10'
+                            ? 'text-gray-700 hover:bg-gray-100'
+                            : 'text-white hover:bg-white/10'
                             }`}
                     >
                         {isMobileMenuOpen ? (
@@ -109,8 +101,8 @@ const Navbar = () => {
                             to={link.path}
                             onClick={() => setIsMobileMenuOpen(false)}
                             className={`block py-2 text-lg font-semibold transition-colors ${isActive(link.path)
-                                    ? 'text-orange-500'
-                                    : 'text-gray-700 hover:text-orange-500'
+                                ? 'text-orange-500'
+                                : 'text-gray-700 hover:text-orange-500'
                                 }`}
                         >
                             {link.name}
