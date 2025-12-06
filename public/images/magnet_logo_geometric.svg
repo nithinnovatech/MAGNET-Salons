@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" fill="none">
+  <!-- MAGNET Text in Geometric Style -->
+  <g transform="translate(10, 10)">
+    <!-- M -->
+    <path d="M10 80 L10 10 L35 50 L60 10 L60 80" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+    
+    <!-- A (Triangle) -->
+    <path d="M80 80 L110 10 L140 80" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M96 55 L124 55" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square"/>
+
+    <!-- G -->
+    <path d="M200 25 A 35 35 0 1 0 200 65 L 200 45" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square"/>
+    <line x1="180" y1="45" x2="200" y2="45" stroke="#FF6B35" stroke-width="8" />
+
+    <!-- N -->
+    <path d="M230 80 L230 10 L270 80 L270 10" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+
+    <!-- E (Three Bars) -->
+    <path d="M300 10 L340 10" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square"/>
+    <path d="M300 45 L330 45" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square"/>
+    <path d="M300 80 L340 80" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square"/>
+    <path d="M300 10 L300 80" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square"/>
+
+    <!-- T -->
+    <path d="M360 10 L420 10" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square"/>
+    <path d="M390 10 L390 80" stroke="#FF6B35" stroke-width="8" fill="none" stroke-linecap="square"/>
+  </g>
+
+  <!-- SALON & AESTHETICS Text -->
+  <text x="10" y="130" font-family="'Inter', sans-serif" font-weight="500" font-size="24" letter-spacing="4" fill="#FFFFFF">SALON &amp; AESTHETICS</text>
+</svg>
