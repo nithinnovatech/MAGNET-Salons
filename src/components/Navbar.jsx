@@ -36,11 +36,12 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
-                        <img
-                            src="/images/magnet Salon & Aesthetics logo white text.png"
-                            alt="Magnet Salon & Aesthetics"
-                            className={`h-20 w-auto transition-all duration-300 filter-orange`}
-                        />
+                        <div className="flex items-center">
+                            <span className="text-2xl md:text-3xl font-bold magnet-brand">MAGNET</span>
+                            <span className="text-2xl md:text-3xl font-bold text-white ml-2">
+                                SALON & AESTHETICS
+                            </span>
+                        </div>
                     </Link>
 
                     {/* Desktop Navigation */}
