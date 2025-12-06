@@ -7,9 +7,9 @@ const BranchLocations = () => {
             name: 'Magunta Layout',
             city: 'Nellore',
             address:
-                '3rd Floor, Lakshmi Priya Imperial Towers, Above SBI Bank, Magunta Layout, Nellore - 524001',
+                '3rd Floor, Lakshmi Priya Imperial Towers, above SBI Bank, Nellore, 524003, AP, IN',
             phone: '98850 77796',
-            mapLink: 'https://maps.google.com/?q=Magunta+Layout+Nellore',
+            mapLink: 'https://www.google.com/maps/search/Magnet%20Salon/@14.43504811,79.97851457,17z',
             image:
                 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&q=80',
         },
@@ -17,9 +17,9 @@ const BranchLocations = () => {
             name: 'Childrens Park',
             city: 'Nellore',
             address:
-                'First Floor, Aadhya Enclave, Childrens Park Main Road, Above Canara Bank, Nellore - 524003',
+                '16-15-986-1, Aadhya Enclave, Childrens Park Road / Main Road, 1, Nellore, 524002, AP, IN',
             phone: '98850 77796',
-            mapLink: 'https://maps.google.com/?q=Childrens+Park+Nellore',
+            mapLink: 'https://www.google.com/maps/search/Magnet%20Salon/@14.44010656,79.99281092,17z',
             image:
                 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80',
         },
@@ -75,9 +75,14 @@ const BranchLocations = () => {
                             <div className="p-6 space-y-4">
                                 <div className="flex items-start space-x-3">
                                     <MapPinIcon className="h-6 w-6 text-orange-500 flex-shrink-0 mt-1" />
-                                    <p className="text-gray-600 leading-relaxed">
+                                    <a
+                                        href={branch.mapLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-gray-600 leading-relaxed hover:text-orange-500 transition-colors"
+                                    >
                                         {branch.address}
-                                    </p>
+                                    </a>
                                 </div>
 
                                 <div className="flex items-center space-x-3">
