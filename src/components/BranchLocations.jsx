@@ -19,7 +19,7 @@ const BranchLocations = () => {
             address:
                 '16-15-986-1, Aadhya Enclave, Childrens Park Road / Main Road, 1, Nellore, 524002, AP, IN',
             phone: '98850 77796',
-            mapLink: 'https://www.google.com/maps/search/Magnet%20Salon/@14.44010656,79.99281092,17z',
+            mapLink: 'https://www.google.com/maps/dir/?api=1&destination=14.44010656,79.99281092',
             image:
                 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80',
         },
@@ -29,7 +29,7 @@ const BranchLocations = () => {
             address:
                 'First Floor, Opp. Yamaha Showroom, New Balaji Colony, AIR Bypass Road, Tirupati',
             phone: '98850 77796',
-            mapLink: 'https://maps.google.com/?q=AIR+Bypass+Road+Tirupati',
+            mapLink: 'https://www.google.com/maps/dir/?api=1&destination=First+Floor+Opp+Yamaha+Showroom+New+Balaji+Colony+AIR+Bypass+Road+Tirupati',
             image:
                 'https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=800&q=80',
         },
