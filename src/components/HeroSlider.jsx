@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
-
+import { Link } from 'react-router-dom';
 const HeroSlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -10,18 +10,21 @@ const HeroSlider = () => {
             title: 'Transform Your Look',
             subtitle: 'Experience Premium Beauty & Hair Services',
             cta: 'Book Appointment',
+            ctaLink: '/contact',
         },
         {
             image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80',
             title: 'Luxury Hair Treatments',
             subtitle: 'Expert Stylists • Premium Products • Stunning Results',
             cta: 'Explore Services',
+            ctaLink: '/services',
         },
         {
             image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1920&q=80',
             title: 'Your Beauty Sanctuary',
             subtitle: 'Skin Care • Makeup • Spa Treatments • Weight Loss',
             cta: 'Learn More',
+            ctaLink: '/about',
         },
     ];
 
@@ -52,17 +55,20 @@ const HeroSlider = () => {
                 <div
                     key={index}
                     className={`absolute inset-0 transition-all duration-1000 ease-in-out ${index === currentSlide
-                            ? 'opacity-100 scale-100'
-                            : 'opacity-0 scale-105'
+                        ? 'opacity-100 scale-100'
+                        : 'opacity-0 scale-105'
                         }`}
                 >
                     {/* Background Image */}
                     <div
-                        className="absolute inset-0 bg-blue-500 bg-cover bg-center"
+                        className="absolute inset-0 bg-cover bg-center"
                         style={{
                             backgroundImage: `url(${slide.image})`,
                         }}
-                    />
+                    >
+                        {/* Dark overlay for better text visibility */}
+                        <div className="absolute inset-0 bg-black/40" />
+                    </div>
 
                     {/* Content */}
                     <div className="relative h-full flex items-center">
@@ -83,12 +89,12 @@ const HeroSlider = () => {
                                     {slide.subtitle}
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <button className="btn-primary text-lg px-10 py-4">
+                                    <Link to={slide.ctaLink} className="btn-primary text-lg px-10 py-4">
                                         {slide.cta}
-                                    </button>
-                                    <button className="btn-secondary text-lg px-10 py-4 text-white border-white hover:bg-white hover:text-orange-500">
+                                    </Link>
+                                    <a href="tel:9885077796" className="btn-secondary text-lg px-10 py-4 text-white border-white hover:bg-white hover:text-orange-500">
                                         Call: 98850 77796
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -119,8 +125,8 @@ const HeroSlider = () => {
                         key={index}
                         onClick={() => goToSlide(index)}
                         className={`transition-all duration-300 rounded-full ${index === currentSlide
-                                ? 'bg-orange-500 w-12 h-3'
-                                : 'bg-white/50 hover:bg-white/75 w-3 h-3'
+                            ? 'bg-orange-500 w-12 h-3'
+                            : 'bg-white/50 hover:bg-white/75 w-3 h-3'
                             }`}
                         aria-label={`Go to slide ${index + 1}`}
                     />

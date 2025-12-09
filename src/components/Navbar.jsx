@@ -28,8 +28,8 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
-                ? 'bg-white/95 backdrop-blur-md shadow-lg'
-                : 'bg-transparent'
+                ? 'bg-gray-800 shadow-lg'
+                : 'bg-gray-800'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,9 +51,7 @@ const Navbar = () => {
                                 to={link.path}
                                 className={`text-base font-semibold transition-colors duration-200 relative group ${isActive(link.path)
                                     ? 'text-orange-500'
-                                    : isScrolled
-                                        ? 'text-gray-700 hover:text-orange-500'
-                                        : 'text-white hover:text-orange-300'
+                                    : 'text-white hover:text-orange-400'
                                     }`}
                             >
                                 {link.name}
@@ -75,10 +73,7 @@ const Navbar = () => {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className={`lg:hidden p-2 rounded-lg transition-colors ${isScrolled
-                            ? 'text-gray-700 hover:bg-gray-100'
-                            : 'text-white hover:bg-white/10'
-                            }`}
+                        className="lg:hidden p-2 rounded-lg transition-colors text-white hover:bg-gray-700"
                     >
                         {isMobileMenuOpen ? (
                             <XMarkIcon className="h-7 w-7" />

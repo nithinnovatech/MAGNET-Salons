@@ -26,19 +26,29 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        // Get branch name display
+        const branchNames = {
+            'magunta': 'Magunta Layout, Nellore',
+            'childrens': 'Childrens Park, Nellore',
+            'tirupati': 'Tirupati'
+        };
+        const branchDisplay = formData.branch ? branchNames[formData.branch] || formData.branch : 'Not specified';
+
         const subject = `New Contact Inquiry from ${formData.name}`;
         const body = `
 Name: ${formData.name}
 Email: ${formData.email}
 Phone: ${formData.phone}
-Preferred Branch: ${formData.branch}
+Preferred Branch: ${branchDisplay}
 
 Message:
 ${formData.message}
         `.trim();
 
+        // Open email client with prefilled data
         window.location.href = `mailto:contact@magnetsalons.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
+        // Reset form after submission
         setFormData({ name: '', email: '', phone: '', branch: '', message: '' });
     };
 
@@ -49,7 +59,7 @@ ${formData.message}
                 '3rd Floor, Lakshmi Priya Imperial Towers, above SBI Bank, Nellore, 524003, AP, IN',
             phone: '98850 77796',
             mapEmbed:
-                'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.0624647343467!2d79.9763259!3d14.4350481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4c8cca0e968749%3A0x7d23a7764049830!2sLakshmi%20Priya%20Imperial%20Towers!5e0!3m2!1sen!2sin!4v1701850000000!5m2!1sen!2sin',
+                'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.062!2d79.9763!3d14.4350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4c8cca0e968749%3A0x7d23a7764049830!2sMagnet%20Salon%20Magunta%20Layout!5e0!3m2!1sen!2sin!4v1733742000000!5m2!1sen!2sin',
         },
         {
             name: 'Childrens Park, Nellore',
@@ -57,7 +67,7 @@ ${formData.message}
                 '16-15-986-1, Aadhya Enclave, Childrens Park Road / Main Road, 1, Nellore, 524002, AP, IN',
             phone: '98850 77796',
             mapEmbed:
-                'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.0!2d79.99!3d14.44!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDI2JzI0LjQiTiA3OcKwNTknMzQuMSJF!5e0!3m2!1sen!2sin!4v1638360000000!5m2!1sen!2sin',
+                'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.0!2d79.9928!3d14.4401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMagnet%20Salon%20Childrens%20Park!5e0!3m2!1sen!2sin!4v1733742100000!5m2!1sen!2sin',
         },
         {
             name: 'Tirupati',
@@ -65,7 +75,7 @@ ${formData.message}
                 'First Floor, Opp. Yamaha Showroom, New Balaji Colony, AIR Bypass Road, Tirupati',
             phone: '98850 77796',
             mapEmbed:
-                'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245535.56250893784!2d79.41999545!3d13.62851275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b0f88a1cb87%3A0xf3dac7b9a5aa7e42!2sTirupati%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890123',
+                'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30842.0!2d79.42!3d13.63!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMagnet%20Salon%20Tirupati!5e0!3m2!1sen!2sin!4v1733742200000!5m2!1sen!2sin',
         },
     ];
 
