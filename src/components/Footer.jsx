@@ -18,13 +18,13 @@ const Footer = () => {
             name: 'Magunta Layout, Nellore',
             address:
                 '3rd Floor, Lakshmi Priya Imperial Towers, above SBI Bank, Nellore, 524003, AP, IN',
-            mapLink: 'https://www.google.com/maps/search/Magnet%20Salon/@14.43504811,79.97851457,17z',
+            mapLink: 'https://maps.app.goo.gl/vA8Swx428q62S3VL8',
         },
         {
             name: 'Childrens Park, Nellore',
             address:
                 '16-15-986-1, Aadhya Enclave, Childrens Park Road / Main Road, 1, Nellore, 524002, AP, IN',
-            mapLink: 'https://www.google.com/maps/search/Magnet%20Salon/@14.44010656,79.99281092,17z',
+            mapLink: 'https://maps.app.goo.gl/dpvnJDkTzbJuMBvC6',
         },
         {
             name: 'Tirupati',
@@ -59,12 +59,13 @@ const Footer = () => {
                     {/* About Section */}
                     <div>
                         <div className="mb-6">
-                            <div className="bg-white px-4 py-3 rounded-lg inline-block">
+                            <div className="bg-white px-4 py-3 rounded-lg inline-flex items-center gap-1">
                                 <img
                                     src="/images/magnet_logo_recolor.png"
                                     alt="Magnet Salon & Aesthetics"
                                     className="h-28 w-auto"
                                 />
+                                <span className="text-orange-500 font-bold text-sm -ml-1 mt-2">®</span>
                             </div>
                         </div>
                         <p className="text-gray-300 mb-6 leading-relaxed">
