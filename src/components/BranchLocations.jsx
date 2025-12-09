@@ -9,7 +9,7 @@ const BranchLocations = () => {
             address:
                 '3rd Floor, Lakshmi Priya Imperial Towers, above SBI Bank, Nellore, 524003, AP, IN',
             phone: '98850 77796',
-            mapLink: 'https://www.google.com/maps/search/Magnet%20Salon/@14.43504811,79.97851457,17z',
+            mapLink: 'https://maps.app.goo.gl/vA8Swx428q62S3VL8',
             image:
                 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&q=80',
         },
@@ -19,7 +19,7 @@ const BranchLocations = () => {
             address:
                 '16-15-986-1, Aadhya Enclave, Childrens Park Road / Main Road, 1, Nellore, 524002, AP, IN',
             phone: '98850 77796',
-            mapLink: 'https://www.google.com/maps/dir/?api=1&destination=14.44010656,79.99281092',
+            mapLink: 'https://maps.app.goo.gl/dpvnJDkTzbJuMBvC6',
             image:
                 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80',
         },
