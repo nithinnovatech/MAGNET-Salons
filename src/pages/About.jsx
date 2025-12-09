@@ -5,7 +5,7 @@ import { CheckCircleIcon } from '@heroicons/react/24/solid';
 const About = () => {
     const stats = [
         { number: '3', label: 'Premium Locations' },
-        { number: '10+', label: 'Years Experience' },
+        { number: '8+', label: 'Years Experience' },
         { number: '10K+', label: 'Happy Clients' },
         { number: '50+', label: 'Expert Professionals' },
     ];
@@ -35,20 +35,20 @@ const About = () => {
 
     const milestones = [
         {
-            year: '2010',
-            event: 'MAGNET Salons founded with first location in Nellore',
-        },
-        {
-            year: '2015',
-            event: 'Expanded to Tirupati, bringing premium services to more customers',
+            year: '2016',
+            event: 'MAGNET Salons founded by B. Surya Narayana Raju in Magunta Layout, Nellore',
         },
         {
             year: '2018',
-            event: 'Introduced advanced laser technology and weight loss treatments',
+            event: 'Opened second branch in Children\'s Park Road, Nellore due to growing demand',
         },
         {
-            year: '2020',
-            event: 'Opened third location and crossed 10,000 satisfied customers',
+            year: '2019',
+            event: 'Expanded to Tirupati with AIR Bypass Road branch, bringing premium services to more customers',
+        },
+        {
+            year: '2022',
+            event: 'Ventured into cosmetic retail business with exclusive range of beauty products',
         },
         {
             year: '2024',
@@ -76,7 +76,7 @@ const About = () => {
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
                             Redefining beauty standards with premium services, expert professionals,
-                            and a commitment to excellence since 2010.
+                            and a commitment to excellence since 2016.
                         </p>
                     </div>
                 </div>
@@ -108,16 +108,18 @@ const About = () => {
                             </h2>
                             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                                 <p>
-                                    Founded in 2010, MAGNET Salons started with a simple vision: to bring
-                                    world-class beauty and wellness services to the heart of Andhra Pradesh.
-                                    What began as a single salon in Nellore has grown into a trusted beauty
-                                    destination with three premium locations.
+                                    Magnet was established in 2016 in Magunta Layout, Nellore by our founder,
+                                    B. Surya Narayana Raju, with the aim of offering exceptional beauty and
+                                    wellness services. Due to growing demand, we opened a second branch in
+                                    Children's Park Road, Nellore in 2018, followed by the launch of our
+                                    Tirupati branch in 2019.
                                 </p>
                                 <p>
-                                    Over the years, we've served more than 10,000 satisfied clients,
-                                    combining traditional beauty wisdom with cutting-edge technology. Our
-                                    team of certified professionals is dedicated to making you look and feel
-                                    your absolute best.
+                                    In 2022, we ventured into the cosmetic retail business, offering an
+                                    exclusive range of beauty products to complement our salon services.
+                                    At Magnet Salon & Aesthetics, we are committed to delivering personalized
+                                    treatments and luxurious experiences that leave you feeling confident and
+                                    rejuvenated.
                                 </p>
                                 <p>
                                     Today, MAGNET Salons stands as a symbol of excellence in the beauty

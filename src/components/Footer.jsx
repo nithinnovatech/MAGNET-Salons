@@ -59,11 +59,13 @@ const Footer = () => {
                     {/* About Section */}
                     <div>
                         <div className="mb-6">
-                            <img
-                                src="/images/magnet_logo_recolor.png"
-                                alt="Magnet Salon & Aesthetics"
-                                className="h-32 w-auto"
-                            />
+                            <div className="bg-white px-4 py-3 rounded-lg inline-block">
+                                <img
+                                    src="/images/magnet_logo_recolor.png"
+                                    alt="Magnet Salon & Aesthetics"
+                                    className="h-28 w-auto"
+                                />
+                            </div>
                         </div>
                         <p className="text-gray-300 mb-6 leading-relaxed">
                             Your premium beauty destination offering world-class services in a
@@ -99,7 +101,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-xl font-bold mb-6">Quick Links</h4>
+                        <h4 className="text-xl font-bold mb-6 text-white">Quick Links</h4>
                         <ul className="space-y-3">
                             {quickLinks.map((link) => (
                                 <li key={link.path}>
@@ -119,7 +121,7 @@ const Footer = () => {
 
                     {/* Services */}
                     <div>
-                        <h4 className="text-xl font-bold mb-6">Our Services</h4>
+                        <h4 className="text-xl font-bold mb-6 text-white">Our Services</h4>
                         <ul className="space-y-3">
                             {services.map((service) => (
                                 <li key={service}>
@@ -139,7 +141,7 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h4 className="text-xl font-bold mb-6">Get In Touch</h4>
+                        <h4 className="text-xl font-bold mb-6 text-white">Get In Touch</h4>
                         <div className="space-y-4">
                             <a
                                 href="tel:9885077796"
@@ -158,7 +160,7 @@ const Footer = () => {
                             <div className="flex items-start space-x-3 text-gray-300">
                                 <FaClock className="h-5 w-5 mt-1 flex-shrink-0" />
                                 <div>
-                                    <p className="font-semibold">Business Hours</p>
+                                    <p className="font-semibold text-white">Business Hours</p>
                                     <p>9:00 AM - 9:00 PM</p>
                                     <p>Monday - Sunday</p>
                                 </div>
@@ -169,7 +171,7 @@ const Footer = () => {
 
                 {/* Branches */}
                 <div className="mt-16 pt-12 border-t border-white/10">
-                    <h4 className="text-2xl font-bold mb-8 text-center">
+                    <h4 className="text-2xl font-bold mb-8 text-center text-white">
                         Our <span className="magnet-brand">Locations</span>
                     </h4>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -181,7 +183,7 @@ const Footer = () => {
                                 <div className="flex items-start space-x-3">
                                     <FaMapMarkerAlt className="h-5 w-5 text-orange-500 mt-1 flex-shrink-0" />
                                     <div>
-                                        <h5 className="font-bold text-lg mb-2">{branch.name}</h5>
+                                        <h5 className="font-bold text-lg mb-2 text-white">{branch.name}</h5>
                                         <a
                                             href={branch.mapLink}
                                             target="_blank"
