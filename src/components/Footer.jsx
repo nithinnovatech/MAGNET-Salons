@@ -59,7 +59,7 @@ const Footer = () => {
                     {/* About Section */}
                     <div>
                         <div className="mb-6">
-                            <div className="bg-white px-4 py-3 rounded-lg inline-flex items-center gap-1">
+                            <div className="inline-flex items-center gap-1">
                                 <img
                                     src="/images/magnet_logo_recolor.png"
                                     alt="Magnet Salon & Aesthetics"
