@@ -68,13 +68,6 @@ h6 {
   font-weight: 800;
 }
 
-.magnet-brand::after {
-  content: '®';
-  font-size: 0.5em;
-  vertical-align: super;
-  margin-left: 2px;
-}
-
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
