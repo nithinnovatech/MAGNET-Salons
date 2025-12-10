@@ -59,12 +59,13 @@ const Footer = () => {
                     {/* About Section */}
                     <div>
                         <div className="mb-6">
-                            <div className="inline-flex items-center gap-1">
+                            <div className="relative inline-flex items-center">
                                 <img
                                     src="/images/magnet_logo_recolor.png"
                                     alt="Magnet Salon & Aesthetics"
                                     className="h-28 w-auto"
                                 />
+                                <span className="text-white text-xs font-medium absolute top-8 right-[5%]">®</span>
                             </div>
                         </div>
                         <p className="text-gray-300 mb-6 leading-relaxed">
