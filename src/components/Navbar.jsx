@@ -35,12 +35,13 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-28">
                     {/* Logo */}
-                    <Link to="/" className="flex items-center gap-1">
+                    <Link to="/" className="relative inline-flex items-center">
                         <img
                             src="/images/magnet_logo_recolor.png"
                             alt="Magnet Salon & Aesthetics"
                             className="h-24 md:h-32 w-auto object-contain"
                         />
+                        <span className="text-white text-xs font-medium absolute top-6 right-[5%] md:top-8 md:right-[5%]">®</span>
                     </Link>
 
                     {/* Desktop Navigation */}
