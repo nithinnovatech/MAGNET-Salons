@@ -41,7 +41,6 @@ const Navbar = () => {
                             alt="Magnet Salon & Aesthetics"
                             className="h-24 md:h-32 w-auto object-contain"
                         />
-                        <span className="text-orange-500 font-bold text-xs md:text-sm -ml-1 mt-2 md:mt-3">®</span>
                     </Link>
 
                     {/* Desktop Navigation */}

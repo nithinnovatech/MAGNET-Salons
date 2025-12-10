@@ -65,7 +65,6 @@ const Footer = () => {
                                     alt="Magnet Salon & Aesthetics"
                                     className="h-28 w-auto"
                                 />
-                                <span className="text-orange-500 font-bold text-sm -ml-1 mt-2">®</span>
                             </div>
                         </div>
                         <p className="text-gray-300 mb-6 leading-relaxed">
