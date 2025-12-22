@@ -40,7 +40,7 @@ Message/Why Join:
 ${application.message}
         `.trim();
 
-        window.location.href = `mailto:contact@magnetsalons.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = `mailto:contact@magnetsalons.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         // Reset form (optional, but good UX if they come back)
         setApplication({
@@ -364,7 +364,7 @@ ${application.message}
                         Send us your resume anyway! We're always looking for talented individuals.
                     </p>
                     <a
-                        href="mailto:contact@magnetsalons.com"
+                        href="mailto:contact@magnetsalons.in"
                         className="btn-primary text-lg px-12 py-4"
                     >
                         Send Your Resume

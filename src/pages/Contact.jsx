@@ -46,7 +46,7 @@ ${formData.message}
         `.trim();
 
         // Open email client with prefilled data
-        window.location.href = `mailto:contact@magnetsalons.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = `mailto:contact@magnetsalons.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         // Reset form after submission
         setFormData({ name: '', email: '', phone: '', branch: '', message: '' });
@@ -126,10 +126,10 @@ ${formData.message}
                             </div>
                             <h3 className="text-xl font-bold mb-2">Email Us</h3>
                             <a
-                                href="mailto:contact@magnetsalons.com"
+                                href="mailto:contact@magnetsalons.in"
                                 className="text-orange-500 text-lg font-semibold hover:underline  break-all"
                             >
-                                contact@magnetsalons.com
+                                contact@magnetsalons.in
                             </a>
                             <p className="text-gray-600 mt-2">24/7 Email Support</p>
                         </div>

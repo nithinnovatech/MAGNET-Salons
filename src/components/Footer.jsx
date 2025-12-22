@@ -152,11 +152,11 @@ const Footer = () => {
                                 <span>98850 77796</span>
                             </a>
                             <a
-                                href="mailto:contact@magnetsalons.com"
+                                href="mailto:contact@magnetsalons.in"
                                 className="flex items-start space-x-3 text-gray-300 hover:text-orange-500 transition-colors break-all"
                             >
                                 <FaEnvelope className="h-5 w-5 mt-1 flex-shrink-0" />
-                                <span>contact@magnetsalons.com</span>
+                                <span>contact@magnetsalons.in</span>
                             </a>
                             <div className="flex items-start space-x-3 text-gray-300">
                                 <FaClock className="h-5 w-5 mt-1 flex-shrink-0" />
